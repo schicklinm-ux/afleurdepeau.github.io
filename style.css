@@ -65,7 +65,7 @@ p, li {
 }
 
 .section-title:hover {
-  color: #fff5d6;
+  color: #402a00;
   transform: scale(1.05);
 }
 
@@ -91,7 +91,7 @@ p, li {
    FOOTER
 ========================= */
 footer {
-  background-color: #ffaf6e;
+  background-color: #402a00;
   color: white;
   padding: 12px;
   text-align: center;
@@ -106,7 +106,7 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-  color: #fff5d6;
+  color: #aba19d;
 }
 
 /* =========================
