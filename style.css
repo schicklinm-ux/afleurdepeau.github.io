@@ -1,0 +1,88 @@
+/* =========================
+   GLOBAL
+========================= */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e6bae6; /* fond rose pastel */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* =========================
+   TYPOGRAPHIE
+========================= */
+.section-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3em;
+  color: #f227f5;
+  text-decoration: none;
+  margin: 15px 0;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.section-title:hover {
+  color: #ff80ab;
+  transform: scale(1.05);
+}
+
+/* =========================
+   BOX CENTRALE
+========================= */
+#accueil {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* TITRES GAUCHE & DROITE */
+.titles-left, {
+  display: flex;
+  flex-direction: column;
+  justify-content: justify;
+  align-items: flex-start;
+}
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: #cc4bb2;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffb8cf;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 800px) {
+
+  .titles-left, {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: justify;
+    margin: 20px 0;
+  }
+
+  .section-title {
+    margin: 10px 15px;
+  }
+}
