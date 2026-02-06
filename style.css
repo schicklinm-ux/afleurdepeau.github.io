@@ -9,6 +9,10 @@ body {
   min-height: 100vh;
 }
 
+main {
+  flex: 1;
+}
+
 .boxes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
