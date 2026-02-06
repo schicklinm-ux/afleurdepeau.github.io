@@ -33,6 +33,19 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* =========================
+   ACCUEIL — 3 BOX CÔTE À CÔTE
+========================= */
+
+.home .boxes {
+  justify-content: space-between;
+}
+
+.home .box {
+  max-width: 300px;   /* largeur contrôlée */
+  flex: 1 1 300px;    /* permet 3 box sur une ligne */
+}
+
 .box img {
   max-width: 100%;
   height: auto;
