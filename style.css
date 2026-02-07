@@ -13,6 +13,14 @@ main {
   flex: 1;
 }
 
+.home-content {
+  flex: 1;                 /* prend toute la hauteur dispo */
+  display: flex;
+  justify-content: center; /* centre verticalement */
+  align-items: center;     /* centre horizontalement */
+  padding: 40px 20px;
+}
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
