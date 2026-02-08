@@ -26,7 +26,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;              /* espace ENTRE les box */
-  padding: 20px;          /* espace avec les bords de l’écran */
+  padding: 10px;          /* espace avec les bords de l’écran */
 }
 
 .box {
