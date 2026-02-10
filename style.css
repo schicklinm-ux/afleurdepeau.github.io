@@ -18,7 +18,7 @@ main {
   display: flex;
   justify-content: center; /* centre verticalement */
   align-items: center;     /* centre horizontalement */
-  padding: 120px 60px;
+  padding: 160px 80px;
 }
 
 .boxes {
@@ -301,7 +301,7 @@ footer p {
   /* -------- CONTAINER DES BOXES -------- */
   .boxes {
     width: 100%;
-    max-width: 680px;     /* 👉 colonne centrale */
+    max-width: 720px;     /* 👉 colonne centrale */
     margin: 0 auto;
     padding: 20px 20px;
     display: flex;
