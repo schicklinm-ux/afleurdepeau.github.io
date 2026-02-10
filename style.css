@@ -267,43 +267,54 @@ footer p {
 }
 
 /* =========================
-   VERSION MOBILE / TABLETTE
+   VERSION MOBILE
 ========================= */
 @media (max-width: 768px) {
 
-  /* --- GLOBAL --- */
+  /* -------- CONTENEUR GLOBAL -------- */
   body {
+    margin: 0;
     padding: 0;
   }
 
-  /* -------- NAVIGATION -------- */
+  /* -------- NAV -------- */
   .main-nav {
+    width: 100%;
+    padding: 15px 10px;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    padding: 15px 12px;
+    gap: 12px;
   }
 
   .nav-link {
-    font-size: 1.1em;
+    font-size: 1.15em;
     padding: 6px 10px;
+  }
+
+  /* -------- SECTION CONTENU -------- */
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   /* -------- CONTAINER DES BOXES -------- */
   .boxes {
+    width: 100%;
+    max-width: 680px;     /* 👉 colonne centrale */
+    margin: 0 auto;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    padding: 20px 16px; /* 👉 marges latérales */
+    gap: 30px;
   }
 
   /* -------- BOX -------- */
   .box {
     width: 100%;
-    max-width: 520px;   /* 👉 limite propre */
-    margin: 0;
-    padding: 22px 20px;
+    margin: 0 auto;
+    padding: 26px 24px;
+    border-radius: 14px;
   }
 
   /* -------- IMAGES -------- */
@@ -314,26 +325,32 @@ footer p {
     margin: 0 auto;
   }
 
-  /* -------- LIGHTBOX -------- */
-  .lightbox img {
-    max-width: 90%;
-    max-height: 80vh;
-  }
-
-  .close,
-  .next,
-  .prev {
-    font-size: 2em;
-  }
-
   /* -------- FOOTER -------- */
   footer {
-    padding: 20px 14px;
-    font-size: 0.9em;
+    width: 100%;
+    margin-top: auto;
+    padding: 24px 18px;
+    text-align: center;
+  }
+
+  footer p {
+    max-width: 680px;    /* 👉 même largeur que les box */
+    margin: 10px auto;
   }
 
   footer a {
     display: inline-block;
-    margin: 6px 8px;
+    margin: 6px 10px;
+  }
+
+  /* -------- LIGHTBOX -------- */
+  .lightbox {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox img {
+    max-width: 92%;
+    max-height: 80vh;
   }
 }
