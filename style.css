@@ -265,3 +265,64 @@ footer p {
 .lightbox .next {
   right: 30px;
 }
+
+/* =========================
+   VERSION MOBILE / TABLETTE
+========================= */
+@media (max-width: 768px) {
+
+  /* -------- NAVIGATION -------- */
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 10px;
+  }
+
+  .nav-link {
+    font-size: 1.1em;
+    padding: 6px 10px;
+  }
+
+  /* -------- BOXES -------- */
+  .boxes {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .box {
+    width: 90%;
+    max-width: 100%;
+    margin: 15px auto;
+  }
+
+  /* -------- IMAGES -------- */
+  .box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* -------- LIGHTBOX -------- */
+  .lightbox img {
+    max-width: 90%;
+    max-height: 80vh;
+  }
+
+  .close,
+  .next,
+  .prev {
+    font-size: 2em;
+  }
+
+  /* -------- FOOTER -------- */
+  footer {
+    font-size: 0.9em;
+    padding: 20px 10px;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 6px;
+  }
+}
