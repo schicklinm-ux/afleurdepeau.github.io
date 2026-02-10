@@ -18,7 +18,7 @@ main {
   display: flex;
   justify-content: center; /* centre verticalement */
   align-items: center;     /* centre horizontalement */
-  padding: 80px 40px;
+  padding: 120px 60px;
 }
 
 .boxes {
