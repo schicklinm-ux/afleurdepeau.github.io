@@ -173,40 +173,62 @@ p, li {
 /* =========================
    FOOTER
 ========================= */
-
 footer {
+  width: 100%;
   background-color: #a4845b;
-  color: black;
+  color: white;
+  padding: 15px 10px;
+  padding: 20px;
   text-align: center;
-  padding: 22px 18px;
 }
 
 footer a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
+  margin: 0 8px;
+  line-height: 1.6;
+  margin: 0 8px;
+  padding: 8px;
   margin: 6px 10px;
   display: inline-block;
 }
 
 footer a:hover {
+  text-decoration: none;
   color: #d5c7b3;
 }
 
 footer p {
-  max-width: 900px;
-  margin: 10px auto;
-  font-size: 0.9em;
+  margin: 4px 0;
+  color: #ffffff;
+  margin: 8px auto;
+  font-size: 0.85em;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
   line-height: 1.4;
 }
 
+.footer-title {
+  font-weight: 510;
+  font-size: 0.9em;
+  line-height: 2;
+  margin: 10px 12px;
+  max-width: 900px;
+}
+
 .footer-title2 {
-   color: black;
+  font-weight: 600;
+  color: white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+  padding: 8px 0;
+  font-size: 1.55em;
   font-family: "Playfair Display", serif;
   font-style: italic;
-  font-size: 1.5em;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  padding: 8px 0;
+  text-align: center;
+  line-height: 1.4;
+  margin: 12px 12px;
 }
 
 /* =========================
