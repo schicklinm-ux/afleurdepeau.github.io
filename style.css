@@ -1,6 +1,10 @@
 /* =========================
-   BASE
+   BASE GLOBALE
 ========================= */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -9,22 +13,24 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /* =========================
    NAVIGATION
 ========================= */
 
-header {
-  width: 100%;
-}
-
 .main-nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 20px;
+  padding: 22px 20px;
 }
 
 .nav-link {
@@ -33,14 +39,14 @@ header {
   font-weight: 600;
   font-size: 1.5em;
   color: #6a440c;
-  padding: 8px 14px;
+  padding: 8px 16px;
   transition: all 0.3s ease;
   text-align: center;
 }
 
 .nav-link.active {
   border: 2px solid #6a440c;
-  border-radius: 20px;
+  border-radius: 22px;
 }
 
 .nav-link:hover {
@@ -49,58 +55,7 @@ header {
 }
 
 /* =========================
-   SECTIONS / CONTENU
-========================= */
-
-section {
-  width: 100%;
-}
-
-.page-photos {
-  width: 100%;
-  padding: 40px 20px;
-  box-sizing: border-box;
-}
-
-/* =========================
-   BOXES
-========================= */
-
-.boxes {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.box {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-
-  width: 100%;
-  max-width: 320px;   /* largeur logique pour les photos */
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-.box img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* =========================
-   TITRES & TEXTE
+   TYPOGRAPHIE
 ========================= */
 
 h1 {
@@ -112,7 +67,7 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color: #000;
   border-bottom: 2px solid #402a00;
   padding-bottom: 8px;
   font-size: 1.8em;
@@ -122,17 +77,97 @@ h2 {
 }
 
 h3 {
-  color: #000;
-  font-size: 1em;
-  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
   text-align: center;
+  line-height: 1.4;
+  margin: 8px 0;
 }
 
 p, li {
-  color: black;
   font-size: 1.1em;
   text-align: justify;
   line-height: 1.5;
+  hyphens: auto;
+}
+
+/* =========================
+   CONTENEUR BOXES (GLOBAL)
+========================= */
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 40px 20px;
+}
+
+/* =========================
+   BOX STANDARD
+========================= */
+
+.box {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  max-width: 600px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   BOX PHOTOS
+========================= */
+
+.box.photo {
+  padding: 16px;
+  max-width: 420px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* =========================
+   PAGE ACCUEIL
+========================= */
+
+.home-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 40px;
+}
+
+.home-boxes {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-box {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 36px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  text-align: center;
+  min-width: 260px;
+}
+
+.home-box h3 {
+  font-size: 1.25em;
 }
 
 /* =========================
@@ -140,15 +175,14 @@ p, li {
 ========================= */
 
 footer {
-  width: 100%;
   background-color: #a4845b;
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 22px 18px;
 }
 
 footer a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   margin: 6px 10px;
   display: inline-block;
@@ -159,19 +193,19 @@ footer a:hover {
 }
 
 footer p {
-  margin: 8px auto;
-  font-size: 0.85em;
   max-width: 900px;
+  margin: 10px auto;
+  font-size: 0.9em;
+  line-height: 1.4;
 }
 
 .footer-title2 {
-  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.5em;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   padding: 8px 0;
-  font-size: 1.55em;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
 }
 
 /* =========================
@@ -182,9 +216,8 @@ footer p {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0,0,0,0.85);
   z-index: 1000;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,8 +225,8 @@ footer p {
 
 #lightbox-img {
   max-width: 90%;
-  max-height: 85%;
-  border-radius: 12px;
+  max-height: 85vh;
+  border-radius: 14px;
 }
 
 .lightbox .close,
@@ -201,44 +234,61 @@ footer p {
 .lightbox .next {
   position: absolute;
   color: white;
+  font-size: 40px;
   cursor: pointer;
-  user-select: none;
 }
 
 .lightbox .close {
   top: 20px;
   right: 30px;
-  font-size: 40px;
 }
 
 .lightbox .prev {
   left: 30px;
-  font-size: 50px;
 }
 
 .lightbox .next {
   right: 30px;
-  font-size: 50px;
 }
 
 /* =========================
-   MOBILE
+   VERSION MOBILE
 ========================= */
 
 @media (max-width: 768px) {
 
-  .boxes {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .box {
-    max-width: 100%;
+  .main-nav {
+    gap: 12px;
   }
 
   .nav-link {
     font-size: 1.15em;
+    padding: 6px 10px;
+  }
+
+  .home-content {
+    padding: 80px 20px;
+  }
+
+  .home-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 22px 24px;
+  }
+
+  .boxes {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .box {
+    max-width: 100%;
+    padding: 24px;
   }
 
   footer p {
