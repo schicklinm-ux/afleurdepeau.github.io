@@ -236,15 +236,16 @@ footer p {
 ========================= */
 
 .lightbox {
-  display: none;
+  display: none;               /* ✅ cachée au chargement */
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.85);
   z-index: 1000;
-  display: flex;
+
   justify-content: center;
   align-items: center;
 }
+
 
 #lightbox-img {
   max-width: 90%;
