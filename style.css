@@ -214,6 +214,7 @@ footer p {
   line-height: 2;
   margin: 10px 12px;
   max-width: 900px;
+   text-align: center;
 }
 
 .footer-title2 {
