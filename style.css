@@ -54,9 +54,6 @@ main {
   color: #c47f16;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 /* =========================
    TYPOGRAPHIE
@@ -93,6 +90,7 @@ h4 {
   line-height: 1.5;
   hyphens: auto;
    padding: 0 10px;
+   font-weight: normal;
 }
 
 p, li {
