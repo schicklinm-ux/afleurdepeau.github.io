@@ -54,6 +54,10 @@ main {
   color: #c47f16;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* =========================
    TYPOGRAPHIE
 ========================= */
@@ -88,6 +92,7 @@ p, li {
   text-align: center;
   line-height: 1.5;
   hyphens: auto;
+   padding: 0 10px;
 }
 
 /* =========================
@@ -177,7 +182,6 @@ footer {
   width: 100%;
   background-color: #a4845b;
   color: white;
-  padding: 15px 10px;
   padding: 20px;
   text-align: center;
 }
@@ -185,9 +189,7 @@ footer {
 footer a {
   color: #ffffff;
   text-decoration: none;
-  margin: 0 8px;
   line-height: 1.6;
-  margin: 0 8px;
   padding: 8px;
   margin: 6px 10px;
   display: inline-block;
@@ -199,7 +201,6 @@ footer a:hover {
 }
 
 footer p {
-  margin: 4px 0;
   color: #ffffff;
   margin: 8px auto;
   font-size: 0.85em;
