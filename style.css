@@ -216,6 +216,8 @@ footer p {
   margin: 10px 12px;
   max-width: 900px;
   text-align: center;
+   display: block;
+   width: 100%;
 }
 
 .footer-title2 {
