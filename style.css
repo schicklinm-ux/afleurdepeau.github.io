@@ -87,9 +87,17 @@ h3 {
   margin: 8px 0;
 }
 
-p, li {
+h4 {
   font-size: 1.1em;
   text-align: center;
+  line-height: 1.5;
+  hyphens: auto;
+   padding: 0 10px;
+}
+
+p, li {
+  font-size: 1.1em;
+  text-align: justify;
   line-height: 1.5;
   hyphens: auto;
    padding: 0 10px;
